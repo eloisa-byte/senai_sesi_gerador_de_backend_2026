@@ -1,0 +1,184 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "API - gestao_residuos",
+  "dateExported": "2026-11-12T19:41:32.947Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "folder_usuario_0",
+      "name": "USUARIOS",
+      "containerId": "",
+      "created": "2026-11-12T19:41:32.942Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "folder_ocorrencia_1",
+      "name": "OCORRENCIAS",
+      "containerId": "",
+      "created": "2026-11-12T19:41:32.946Z",
+      "sortNum": 20000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "req_usuario_0_1794512492944",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_usuario_0",
+      "name": "Cadastrar",
+      "url": "http://localhost:3000/usuarios/cadastrar",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2026-11-12T19:41:32.942Z",
+      "modified": "2026-11-12T19:41:32.942Z",
+      "headers": [],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Exemplo Nome\",\n  \"email\": \"usuario@email.com\",\n  \"senha\": \"123456\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req_usuario_1_1794512492944",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_usuario_0",
+      "name": "Listar",
+      "url": "http://localhost:3000/usuarios/listar",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-12T19:41:32.942Z",
+      "modified": "2026-11-12T19:41:32.942Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "req_usuario_2_1794512492944",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_usuario_0",
+      "name": "Buscar por ID",
+      "url": "http://localhost:3000/usuarios/buscar/1",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2026-11-12T19:41:32.942Z",
+      "modified": "2026-11-12T19:41:32.942Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "req_usuario_3_1794512492944",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_usuario_0",
+      "name": "Atualizar",
+      "url": "http://localhost:3000/usuarios/atualizar/1",
+      "method": "PATCH",
+      "sortNum": 40000,
+      "created": "2026-11-12T19:41:32.942Z",
+      "modified": "2026-11-12T19:41:32.942Z",
+      "headers": [],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Exemplo Nome\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req_usuario_4_1794512492944",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_usuario_0",
+      "name": "Excluir",
+      "url": "http://localhost:3000/usuarios/excluir/1",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2026-11-12T19:41:32.942Z",
+      "modified": "2026-11-12T19:41:32.942Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "req_ocorrencia_0_1794512492946",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_ocorrencia_1",
+      "name": "Cadastrar",
+      "url": "http://localhost:3000/ocorrencias/cadastrar",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2026-11-12T19:41:32.946Z",
+      "modified": "2026-11-12T19:41:32.946Z",
+      "headers": [],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"usuarioId\": 1,\n  \"local\": \"Exemplo local\",\n  \"tipoResiduo\": \"Exemplo tipoResiduo\",\n  \"nivelRisco\": \"Baixo\",\n  \"data\": \"2026-11-12\",\n  \"status\": \"Novo\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req_ocorrencia_1_1794512492946",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_ocorrencia_1",
+      "name": "Listar",
+      "url": "http://localhost:3000/ocorrencias/listar",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2026-11-12T19:41:32.946Z",
+      "modified": "2026-11-12T19:41:32.946Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "req_ocorrencia_2_1794512492946",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_ocorrencia_1",
+      "name": "Buscar por ID",
+      "url": "http://localhost:3000/ocorrencias/buscar/1",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2026-11-12T19:41:32.946Z",
+      "modified": "2026-11-12T19:41:32.946Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "req_ocorrencia_3_1794512492946",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_ocorrencia_1",
+      "name": "Atualizar",
+      "url": "http://localhost:3000/ocorrencias/atualizar/1",
+      "method": "PATCH",
+      "sortNum": 40000,
+      "created": "2026-11-12T19:41:32.946Z",
+      "modified": "2026-11-12T19:41:32.946Z",
+      "headers": [],
+      "params": [],
+      "tests": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"usuarioId\": 1\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req_ocorrencia_4_1794512492946",
+      "colId": "col_gestao_residuos",
+      "containerId": "folder_ocorrencia_1",
+      "name": "Excluir",
+      "url": "http://localhost:3000/ocorrencias/excluir/1",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "created": "2026-11-12T19:41:32.946Z",
+      "modified": "2026-11-12T19:41:32.946Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ]
+}
