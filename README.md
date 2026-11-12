@@ -4,7 +4,7 @@ Ferramenta de linha de comando (CLI) desenvolvida em Node.js puro para automatiz
 
 ## Características Principais
 
-- **100% Offline e Sem IA:** Utiliza apenas módulos nativos do próprio Node.js (`fs`, `path`, `readline` e `child_process`) e expressões regulares (Regex), sem depender de inteligência artificial ou internet para gerar o código.
+- **100% Offline e Sem IA:** Utiliza apenas módulos nativos do próprio Node.js (`fs`, `path`, `readline` e `child_process`) e expressões regulares (Regex), sem depender de inteligência artificial para gerar o código.
 - **Entrada Única via SQL:** Lê diretamente o script `CREATE DATABASE` e `CREATE TABLE` colado no terminal, identificando automaticamente o nome do banco, todas as tabelas, colunas e tipos de dados.
 - **Arquitetura MVC Completa:** Cria a árvore de diretórios (`src/config`, `src/controllers`, `src/models`, `src/routes`), `server.js`, `package.json` e `.gitignore`.
 - **CRUD e Segurança:** Gera as 5 operações (`cadastrar`, `listar`, `buscar`, `excluir` e `atualizar`) para cada tabela com proteção contra SQL Injection (`?`) e ocultação automática da coluna `senha` nas consultas da tabela `usuario`.
@@ -55,3 +55,27 @@ backend_<nome_do_banco>/
 ├── server.js
 └── thunder-collection_<nome_do_banco>.json
 ```
+## Demonstração e Prints das Funcionalidades
+
+### 1. Execução do Gerador no Terminal
+![Execução do Gerador](prints/01-gerador-terminal.png)
+
+### 2. Estrutura de Pastas e Arquivos Gerados
+![Estrutura de Pastas](prints/02-estrutura-gerada.png)
+
+### 3. Testes das Rotas no Thunder Client
+
+#### Cadastrar (`POST /cadastrar` - Status 201)
+![Rota Cadastrar](prints/03-cadastrar.png)
+
+#### Listar (`GET /listar` - Status 200)
+![Rota Listar](prints/04-listar.png)
+
+#### Buscar por ID (`GET /buscar/:id` - Status 200)
+![Rota Buscar](prints/05-buscar.png)
+
+#### Atualizar (`PATCH /atualizar/:id` - Status 200)
+![Rota Atualizar](prints/06-atualizar.png)
+
+#### Excluir (`DELETE /excluir/:id` - Status 204)
+![Rota Excluir](prints/07-excluir.png)
